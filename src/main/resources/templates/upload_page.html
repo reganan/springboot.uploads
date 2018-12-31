@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Spring Boot file upload example</h1>
+
+<form method="POST" action="/uploads" enctype="multipart/form-data">
+    <select name="userName">
+        <option value ="snjl">江磊</option>
+        <option value ="wys">吴宇森</option>
+        <option value="others">其他</option>
+    </select>
+    <select name="folderName">
+        <option value ="已读论文">已读论文</option>
+        <option value ="未读论文">未读论文</option>
+        <option value="存储">存储</option>
+        <option value="其他">其他</option>
+    </select>
+    <input multiple="multiple" type="file" name="file" /><br/><br/>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
